@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naveen R - Portfolio</title>
+  <!-- Add this line inside <head> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-4oVFXc0TtGhk2aBTVeX1JQuI6xIbKZt1DWZo5z+GcX+aUVP8eDRZXghIk8Tx7vjMVoOnco3HRzJjZ+Z4eFHEag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+  <!-----Header Section----->
+
+  <header>
+    <div class="container">
+      <div class="logo">NAVEEN <span>R</span></div>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="navbar" id="navbar">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#education">EDUCATION</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#services">SERVICES</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <!----- Hero Section----->
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1><span>HI</span>, I AM<br />NAVEEN R</h1>
+      <p>SOFTWARE DEVELOPER</p>
+
+      <a href="Naveen-Resume.pdf" download class="btn">Download Resume</a>
+
+      <!-----Hire Me Button----->
+
+      <div class="hire-me-wrapper">
+        <button class="hire-me-btn" onclick="scrollToContact()">Hire Me</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!----- ABOUT SECTION ----->
+
+  <section id="about">
+    <div class="about-container">
+      <div class="about-content about-box">
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm <strong>Naveen R</strong>, a passionate and dedicated Software Developer
+          currently pursuing a B.Sc. in Information Technology. I enjoy building
+          responsive, animated, and efficient web applications with modern technologies.
+          My goal is to become a full-stack developer and contribute to innovative software projects.
+        </p>
+      </div>
+      <div class="about-image about-box">
+        <img src="code.gif" alt="Profile Picture" />
+      </div>
+    </div>
+  </section>
+
+
+  <!----- Education Section ----->
+
+  <section class="education" id="education">
+    <div class="education-container">
+      <h2>Education</h2>
+
+      <div class="edu-box reveal">
+        <h3>B.Sc Information Technology <span>| 2022–2025</span></h3>
+        <p><strong>Nallamuthu Gounder Mahalingam College</strong> | Pollachi</p>
+        <p>Percentage - 70%</p>
+      </div>
+
+      <div class="edu-box reveal">
+        <h3>HSC <span>| 2020–2022</span></h3>
+        <p><strong>Tmt. Rukmaniammal Higher Secondary School</strong> | Pollachi</p>
+        <p>Percentage - 70%</p>
+      </div>
+
+      <div class="edu-box reveal">
+        <h3>SSLC <span>| 2019–2020</span></h3>
+        <p><strong>Tmt. Rukmaniammal Higher Secondary School</strong> | Pollachi</p>
+        <p>Percentage - 74%</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!----- Skills Section ----->
+
+  <section class="skills" id="skills">
+    <h2 class="skills-heading">Skills</h2>
+    <div class="skills-grid">
+
+      <div class="skill-box reveal">
+        <h3>FrontEnd</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+
+      <div class="skill-box reveal">
+        <h3>BackEnd</h3>
+        <ul>
+          <li>Java</li>
+          <li>Python</li>
+          <li>C#</li>
+          <li>PHP</li>
+        </ul>
+      </div>
+
+      <div class="skill-box reveal">
+        <h3>Database Management</h3>
+        <ul>
+          <li>SQL</li>
+        </ul>
+      </div>
+
+      <div class="skill-box reveal full-width tool-box">
+        <h3>Tools & Technologies</h3>
+        <div class="tool-grid">
+          <span>Git</span>
+          <span>Excel</span>
+          <span>PowerPoint</span>
+          <span>Word</span>
+          <span>Photoshop</span>
+          <span>Eclipse IDE</span>
+          <span>VS Code</span>
+          <span>Visual Studio</span>
+          <span>NetBeans</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!----- Services / Projects Section ----->
+
+  <section class="services" id="services">
+    <h2 class="services-heading">Services / Projects</h2>
+    <div class="services-grid">
+      <div class="service-box">
+        <h3>Employee Performance Evaluation System</h3>
+        <p>
+          Developed a web-based application using <strong>HTML, CSS, JavaScript, PHP, and MySQL</strong> to evaluate
+          employee performance effectively.
+        </p>
+        <p>
+          The system supports <strong>role-based access</strong> for Admins, Evaluators, and Employees. Admins manage
+          departments, designations, tasks, and users. Evaluators assess employee performance based on
+          <strong>efficiency, quality, timeliness, and accuracy</strong>. Employees submit progress reports that are
+          used for evaluations.
+        </p>
+        <p>
+          It ensures secure data management, streamlines performance tracking, and improves decision-making through a
+          clean interface and insightful analytics.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!----- Contact Section ------>
+
+  <section id="contact" class="contact-section">
+    <div class="contact-container reveal">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="glow-button">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="custom-footer">
+    <div class="footer-content">
+      <p>© 2025 Naveen | All Rights Reserved</p>
+      <div class="footer-buttons">
+        <a href="https://github.com/Naveen1739" target="_blank" class="footer-btn">GitHub</a>
+        <a href="https://www.linkedin.com/in/naveen-rm2005" target="_blank" class="footer-btn">LinkedIn</a>
+        <a href="https://www.instagram.com/your-username" target="_blank" class="footer-btn">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
