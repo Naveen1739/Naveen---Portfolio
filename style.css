@@ -424,6 +424,11 @@ body {
   font-size: 18px;
   line-height: 1.8;
   color: #d3d3d3;
+  text-align: justify;
+}
+
+.about-content  .align{
+  text-indent: 2em; 
 }
 
 /* Profile image styles */
@@ -799,6 +804,11 @@ body {
   font-size: 1.05rem;
   line-height: 1.7;
   margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.indented {
+  text-indent: 2em;
 }
 
 /* Glow animation */
