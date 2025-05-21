@@ -122,8 +122,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
  
-   
+   /**-------Message Submit------ */
 
+
+(function () {
+    emailjs.init("dfZyuyqTygA8-4C73"); // Your actual Public Key
+  })();
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".contact-form");
+    const messageDiv = document.getElementById("form-message");
+
+    function showMessage(text, isError = false) {
+      messageDiv.textContent = text;
+      messageDiv.style.color = isError ? "red" : "green";
+      messageDiv.classList.add("show");
+
+      // Animate opacity and transform (fade and slide up)
+      messageDiv.style.opacity = "1";
+      messageDiv.style.transform = "translateY(0)";
+
+      // Hide message after 3 seconds
+      setTimeout(() => {
+        messageDiv.style.opacity = "0";
+        messageDiv.style.transform = "translateY(15px)";
+        messageDiv.classList.remove("show");
+      }, 3000);
+    }
+
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm("Naveen2005", "template_5y3b4yv", this)
+          .then(function () {
+            showMessage("✅ Message sent successfully!");
+            form.reset();
+          }, function (error) {
+            showMessage("❌ Failed to send message. Try again.", true);
+            console.error("EmailJS Error:", error);
+          });
+      });
+    }
+  });
 
 
 

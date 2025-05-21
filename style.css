@@ -1097,3 +1097,24 @@ body {
     box-shadow: 0 0 25px rgba(238, 9, 121, 0.8);
   }
 }
+
+/*----------------------*/
+
+#form-message {
+  margin-top: 15px;
+  font-size: 18px;
+  color: white;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  min-height: 24px; /* reserve space to avoid layout jumps */
+}
+
+#form-message.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#form-message.error {
+  color: red;
+}
