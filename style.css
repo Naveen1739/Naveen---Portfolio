@@ -268,6 +268,13 @@ body {
   transform-origin: center;
 }
 
+/* Hide hamburger menu on screens wider than 768px */
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
 /*----- When active: top and bottom bars become diagonal with bounce ----- */
 
 .menu-toggle.active span:nth-child(1) {
